@@ -1,0 +1,265 @@
+{
+    "_id" : ObjectId("5a0b878ed773ba55c130d8e2"),
+    "firstName" : "Alec",
+    "fullName" : "Alec Linderman",
+    "gender" : "MALE",
+    "age" : 22,
+    "fitbitId" : "35FHM2",
+    "token" : "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzNUZITTIiLCJhdWQiOiIyMkNLSlAiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyaHIgcnBybyByc2xlIiwiZXhwIjoxNTEwNzMzODM4LCJpYXQiOjE1MTA3MDUwMzh9.JOtc1OliDpiA9Pl9ynSi87vvhRImepaSCoApgJwPJgY",
+    "refreshToken" : "25b602ce45fda2faaf4ca7645191bf4e70e196b28f0cc16f540d9abd47522aca",
+    "sleepData" : [ 
+        {
+            "date" : ISODate("2017-11-14T00:00:00.000Z"),
+            "duration" : 385,
+            "totalDeepSleep" : 72,
+            "totalLightSleep" : 217,
+            "totalRemSleep" : 96,
+            "totalWakeSleep" : 42,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8e3")
+        }, 
+        {
+            "date" : ISODate("2017-11-11T00:00:00.000Z"),
+            "duration" : 425,
+            "totalDeepSleep" : 80,
+            "totalLightSleep" : 268,
+            "totalRemSleep" : 77,
+            "totalWakeSleep" : 61,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8e6")
+        }, 
+        {
+            "date" : ISODate("2017-11-10T00:00:00.000Z"),
+            "duration" : 399,
+            "totalDeepSleep" : 42,
+            "totalLightSleep" : 252,
+            "totalRemSleep" : 105,
+            "totalWakeSleep" : 43,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8e7")
+        }, 
+        {
+            "date" : ISODate("2017-11-12T00:00:00.000Z"),
+            "duration" : 493,
+            "totalDeepSleep" : 66,
+            "totalLightSleep" : 318,
+            "totalRemSleep" : 109,
+            "totalWakeSleep" : 52,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8e5")
+        }, 
+        {
+            "date" : ISODate("2017-11-05T00:00:00.000Z"),
+            "duration" : 477,
+            "totalDeepSleep" : 80,
+            "totalLightSleep" : 292,
+            "totalRemSleep" : 105,
+            "totalWakeSleep" : 57,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8eb")
+        }, 
+        {
+            "date" : ISODate("2017-11-09T00:00:00.000Z"),
+            "duration" : 445,
+            "totalDeepSleep" : 68,
+            "totalLightSleep" : 272,
+            "totalRemSleep" : 105,
+            "totalWakeSleep" : 43,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8e8")
+        }, 
+        {
+            "date" : ISODate("2017-11-07T00:00:00.000Z"),
+            "duration" : 415,
+            "totalDeepSleep" : 81,
+            "totalLightSleep" : 234,
+            "totalRemSleep" : 100,
+            "totalWakeSleep" : 36,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8ea")
+        }, 
+        {
+            "date" : ISODate("2017-11-08T00:00:00.000Z"),
+            "duration" : 403,
+            "totalDeepSleep" : 84,
+            "totalLightSleep" : 206,
+            "totalRemSleep" : 113,
+            "totalWakeSleep" : 43,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8e9")
+        }, 
+        {
+            "date" : ISODate("2017-11-03T00:00:00.000Z"),
+            "duration" : 390,
+            "totalDeepSleep" : 25,
+            "totalLightSleep" : 292,
+            "totalRemSleep" : 73,
+            "totalWakeSleep" : 52,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8ed")
+        }, 
+        {
+            "date" : ISODate("2017-11-02T00:00:00.000Z"),
+            "duration" : 441,
+            "totalDeepSleep" : 96,
+            "totalLightSleep" : 212,
+            "totalRemSleep" : 133,
+            "totalWakeSleep" : 34,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8ee")
+        }, 
+        {
+            "date" : ISODate("2017-11-01T00:00:00.000Z"),
+            "duration" : 408,
+            "totalDeepSleep" : 75,
+            "totalLightSleep" : 257,
+            "totalRemSleep" : 76,
+            "totalWakeSleep" : 32,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8ef")
+        }, 
+        {
+            "date" : ISODate("2017-10-31T00:00:00.000Z"),
+            "duration" : 405,
+            "totalDeepSleep" : 86,
+            "totalLightSleep" : 229,
+            "totalRemSleep" : 90,
+            "totalWakeSleep" : 46,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8f0")
+        }, 
+        {
+            "date" : ISODate("2017-10-29T00:00:00.000Z"),
+            "duration" : 474,
+            "totalDeepSleep" : 99,
+            "totalLightSleep" : 292,
+            "totalRemSleep" : 83,
+            "totalWakeSleep" : 64,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8f2")
+        }, 
+        {
+            "date" : ISODate("2017-10-27T00:00:00.000Z"),
+            "duration" : 403,
+            "totalDeepSleep" : 72,
+            "totalLightSleep" : 235,
+            "totalRemSleep" : 96,
+            "totalWakeSleep" : 29,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8f4")
+        }, 
+        {
+            "date" : ISODate("2017-10-22T00:00:00.000Z"),
+            "duration" : 491,
+            "totalDeepSleep" : 116,
+            "totalLightSleep" : 242,
+            "totalRemSleep" : 133,
+            "totalWakeSleep" : 45,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8f9")
+        }, 
+        {
+            "date" : ISODate("2017-10-28T00:00:00.000Z"),
+            "duration" : 450,
+            "totalDeepSleep" : 105,
+            "totalLightSleep" : 241,
+            "totalRemSleep" : 104,
+            "totalWakeSleep" : 46,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8f3")
+        }, 
+        {
+            "date" : ISODate("2017-10-26T00:00:00.000Z"),
+            "duration" : 387,
+            "totalDeepSleep" : 80,
+            "totalLightSleep" : 237,
+            "totalRemSleep" : 70,
+            "totalWakeSleep" : 36,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8f5")
+        }, 
+        {
+            "date" : ISODate("2017-10-24T00:00:00.000Z"),
+            "duration" : 389,
+            "totalDeepSleep" : 104,
+            "totalLightSleep" : 198,
+            "totalRemSleep" : 87,
+            "totalWakeSleep" : 43,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8f7")
+        }, 
+        {
+            "date" : ISODate("2017-10-23T00:00:00.000Z"),
+            "duration" : 448,
+            "totalDeepSleep" : 77,
+            "totalLightSleep" : 247,
+            "totalRemSleep" : 124,
+            "totalWakeSleep" : 33,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8f8")
+        }, 
+        {
+            "date" : ISODate("2017-10-21T00:00:00.000Z"),
+            "duration" : 468,
+            "totalDeepSleep" : 102,
+            "totalLightSleep" : 252,
+            "totalRemSleep" : 114,
+            "totalWakeSleep" : 48,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8fa")
+        }, 
+        {
+            "date" : ISODate("2017-10-18T00:00:00.000Z"),
+            "duration" : 432,
+            "totalDeepSleep" : 121,
+            "totalLightSleep" : 188,
+            "totalRemSleep" : 123,
+            "totalWakeSleep" : 31,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8fd")
+        }, 
+        {
+            "date" : ISODate("2017-10-19T00:00:00.000Z"),
+            "duration" : 393,
+            "totalDeepSleep" : 56,
+            "totalLightSleep" : 250,
+            "totalRemSleep" : 87,
+            "totalWakeSleep" : 43,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8fc")
+        }, 
+        {
+            "date" : ISODate("2017-10-17T00:00:00.000Z"),
+            "duration" : 424,
+            "totalDeepSleep" : 78,
+            "totalLightSleep" : 265,
+            "totalRemSleep" : 81,
+            "totalWakeSleep" : 42,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8fe")
+        }, 
+        {
+            "date" : ISODate("2017-11-13T00:00:00.000Z"),
+            "duration" : 406,
+            "totalDeepSleep" : 67,
+            "totalLightSleep" : 252,
+            "totalRemSleep" : 87,
+            "totalWakeSleep" : 32,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8e4")
+        }, 
+        {
+            "date" : ISODate("2017-11-04T00:00:00.000Z"),
+            "duration" : 490,
+            "totalDeepSleep" : 102,
+            "totalLightSleep" : 261,
+            "totalRemSleep" : 127,
+            "totalWakeSleep" : 50,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8ec")
+        }, 
+        {
+            "date" : ISODate("2017-10-30T00:00:00.000Z"),
+            "duration" : 410,
+            "totalDeepSleep" : 63,
+            "totalLightSleep" : 262,
+            "totalRemSleep" : 85,
+            "totalWakeSleep" : 29,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8f1")
+        }, 
+        {
+            "date" : ISODate("2017-10-25T00:00:00.000Z"),
+            "duration" : 419,
+            "totalDeepSleep" : 52,
+            "totalLightSleep" : 276,
+            "totalRemSleep" : 91,
+            "totalWakeSleep" : 39,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8f6")
+        }, 
+        {
+            "date" : ISODate("2017-10-20T00:00:00.000Z"),
+            "duration" : 427,
+            "totalDeepSleep" : 131,
+            "totalLightSleep" : 195,
+            "totalRemSleep" : 101,
+            "totalWakeSleep" : 42,
+            "_id" : ObjectId("5a0b878fd773ba55c130d8fb")
+        }
+    ],
+    "__v" : 28
+}
