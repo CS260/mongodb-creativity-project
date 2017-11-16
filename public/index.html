@@ -6,11 +6,94 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
 	<script src="javascripts/comments.js"></script>
 	<script src="./routes/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 </head>
 
 <body>
 
-	<button id="apiCall"><a href="http://localhost:3000/auth/fitbit">Api Call</a></button>
+<!-- 	<button id="apiCall"><a href="http://localhost:3000/auth/fitbit">Api Call</a></button> -->
+
+
+
+
+
+
+	<div id="canvas">
+	<!-- Header -->
+		<header id="top-header">
+			<h1 id="title">Inhabit // Fitbit API Test</h1>
+
+		</header>
+
+		<!-- API Authorize -->
+		
+		<div id="authorize-section">
+			<button id="apiCall">Connect your Fitbit</button>
+			<button id="authorize-button" >View other's data</button>
+			<!-- <button id="authorize-button" >Access Token</button> -->
+		</div>
+		
+		<div id="sleepData-section">
+			<form id="sleep-input-section">
+			<div id="analyzeSleep-text">
+			Analyze Sleep for: 
+			</div>
+			<input type="text" id="input-sleep-date" value="" placeholder="yyyy-MM-dd">
+			<br>
+			<input id="submit-sleep" type="button" value="Submit">
+			</form>
+			
+
+
+			<!-- Sleep Results -->
+			<div id="sleep-table">
+				<div id="column1">
+					<p class="sleepResult-headers">Total Time Asleep:</p>
+					<div class="sleep-results" id="total-min-asleep"></div> 
+				</div>
+
+				<div id="column2">
+					<p class="sleepResult-headers">Total Deep Sleep:</p>
+					<div class="sleep-results" id="total-deep-sleep"></div> 
+				</div>
+
+				<div id="column3">
+					<p class="sleepResult-headers">Total Light Sleep:</p>
+					<div class="sleep-results" id="total-light-sleep"></div> 
+				</div>
+
+				<div id="column4">
+					<p class="sleepResult-headers">Total REM Sleep:</p>
+					<div class="sleep-results"  id="total-rem-sleep"></div> 
+				</div>
+
+				<div id="column5">
+					<p class="sleepResult-headers">Total Awake Time:</p>
+					<div class="sleep-results" id="total-wake-sleep"></div> 
+				</div>
+				
+				<h1 id="sleep-graph-title">Sleep Cycles Graph</h1>
+				
+				<div class="graph-cont">
+				  <div class="bar bar1">Awake: <span id="wakeSleep-percentage">%</div>
+				  <div class="bar bar2">REM: <span id="remSleep-percentage">%</div>
+				  <div class="bar bar3">Light: <span id="lightSleep-percentage">%</div>
+				  <div class="bar bar4">Deep: <span id="deepSleep-percentage">%</span></div>
+				</div>
+			</div>
+		
+		</div>
+		
+
+		<footer id="footer">
+		<p>Inhabit 2017. All rights reserved.</p>
+
+		<a href="https://vimeo.com/214239823" target="_blank">Video</a>
+
+		</footer>
+
+	</div>
+
 
 
 </body>
