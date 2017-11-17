@@ -195,11 +195,15 @@ $(document).ready(function(){
             $("#remSleep-percentage").text(graphRemSleep+"%");
             $("#wakeSleep-percentage").text(graphWakeSleep+"%");
 
+            console.log(graphDeepSleep);
+
             document.styleSheets[0].addRule('.bar4::after', 'max-width: ' + graphDeepSleep + '%;');
             document.styleSheets[0].addRule('.bar3::after', 'max-width: ' + graphLightSleep + '%;');
             document.styleSheets[0].addRule('.bar2::after', 'max-width: ' + graphRemSleep + '%;');
             document.styleSheets[0].addRule('.bar1::after', 'max-width: ' + graphWakeSleep + '%;');
 
+
+            console.log(document.styleSheets[0])
         });
 
     });
