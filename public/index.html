@@ -24,54 +24,70 @@
 		</header>
 
 		<!-- API Authorize -->
-		
+
 		<div id="authorize-section">
 			<button id="apiCall">Connect your Fitbit</button>
 			<button id="authorize-button" >View other's data</button>
 			<!-- <button id="authorize-button" >Access Token</button> -->
 		</div>
-		
+
 		<div id="sleepData-section">
 			<form id="sleep-input-section">
-			<div id="analyzeSleep-text">
-			Analyze Sleep for: 
-			</div>
-				<input type="text" id="input-sleep-date" value="" placeholder="yyyy-MM-dd">
+				<div id="analyzeSleep-text">
+				Analyze Sleep for:
+				</div>
+				<div include="form-input-select()">
+
+				  <select required id="input-sleep-date">
+				    <!-- This is how we can do "placeholder" options.
+				      note: "required" attribute is on the select -->
+				    <option value="" hidden>Name</option>
+
+				    <!-- normal options -->
+				    <option value="Kip">Kip</option>
+				    <option value="Nicole">Nicole</option>
+				    <option value="Oliver">Oliver</option>
+				    <option value="Henry">Henry</option>
+				    <option value="Alec">Alec</option>
+						<option value="Joshua">Joshua</option>
+				  </select>
+				</div>
+				<!-- <input type="text" id="input-sleep-date" value="" placeholder="Name"> -->
 				<br>
 				<input id="submit-sleep" type="button" value="Submit">
-			</form>
-			
+				</form>
+
 
 
 			<!-- Sleep Results -->
 			<div id="sleep-table">
 				<div id="column1">
 					<p class="sleepResult-headers">Total Time Asleep:</p>
-					<div class="sleep-results" id="total-min-asleep"></div> 
+					<div class="sleep-results" id="total-min-asleep"></div>
 				</div>
 
 				<div id="column2">
 					<p class="sleepResult-headers">Total Deep Sleep:</p>
-					<div class="sleep-results" id="total-deep-sleep"></div> 
+					<div class="sleep-results" id="total-deep-sleep"></div>
 				</div>
 
 				<div id="column3">
 					<p class="sleepResult-headers">Total Light Sleep:</p>
-					<div class="sleep-results" id="total-light-sleep"></div> 
+					<div class="sleep-results" id="total-light-sleep"></div>
 				</div>
 
 				<div id="column4">
 					<p class="sleepResult-headers">Total REM Sleep:</p>
-					<div class="sleep-results"  id="total-rem-sleep"></div> 
+					<div class="sleep-results"  id="total-rem-sleep"></div>
 				</div>
 
 				<div id="column5">
 					<p class="sleepResult-headers">Total Awake Time:</p>
-					<div class="sleep-results" id="total-wake-sleep"></div> 
+					<div class="sleep-results" id="total-wake-sleep"></div>
 				</div>
-				
+
 				<h1 id="sleep-graph-title">Sleep Cycles Graph</h1>
-				
+
 				<div class="graph-cont">
 				  <div class="bar bar1">Awake: <span id="wakeSleep-percentage">%</div>
 				  <div class="bar bar2">REM: <span id="remSleep-percentage">%</div>
@@ -79,9 +95,9 @@
 				  <div class="bar bar4">Deep: <span id="deepSleep-percentage">%</div>
 				</div>
 			</div>
-		
+
 		</div>
-		
+
 
 		<footer id="footer">
 		<p>Inhabit 2017. All rights reserved.</p>
