@@ -302,6 +302,7 @@ body{
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
+	overflow: hidden;
 }
 
 .bar4 {
@@ -339,6 +340,17 @@ body{
     width: 100%;
   }
 }
+
+.sleepDateDuration{
+
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+    font-size: 20px;
+
+}
+
 
 /*.bar1::after{
   max-width: 0%;

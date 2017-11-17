@@ -141,12 +141,8 @@ $(document).ready(function(){
                 var minutesHoursWake = hoursMinutes(totalWakeSleep);
 
                 var everything;
-                everything = "<div>Date:"+sleepDate+"  </div>";
-                everything += "<div>Total Time Asleep: "+totalMinutesSleep+" </div>";
-                everything += "<div>Total Deep Sleep:: "+totalDeepSleep+" </div>";
-                everything += "<div>Total Light Asleep: "+totalLightSleep+" </div>";
-                everything += "<div>Total REM Asleep: "+totalRemSleep+" </div>";
-                everything += "<div>Total Awake Time: "+totalWakeSleep+" </div>";
+                everything = "<div class='sleepDateDuration'>Date:"+sleepDate+"  </div>";
+                everything += "<div class='sleepDateDuration'>Total Time Asleep: "+minutesHoursTotal+" </div>"; 
                 $(".graph-cont").append(everything);
                 
                 everything = "<div class='day-graph'>";
