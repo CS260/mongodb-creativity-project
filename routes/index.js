@@ -175,38 +175,63 @@ function returnYearMonthDay(){
 
 	return currentYear+"-"+currentMonth+"-"+currentDate;
 }
+
 var todaysDate = returnYearMonthDay();
 
 
+/* GET Sleep data from database and return to client*/
+router.post('/getFitbitSleep', function(req, res, next) {
+	console.log("In the GET sleep data route");
+
+	var sleepDate = req.body.date; //[3]
+	console.log('Sleep Date: '+sleepDate); //[3]
+	
+	User.find({firstName: sleepDate}, '-_id -fullName -firstName -gender -age -fitbitId -token -refreshToken', function(err, docs) {
+	    if (!err){ 
+	        // console.log('%j', docs);
+	        console.log("Return sleep data: "+docs);
+	        res.json(docs); 
+
+	    } else {throw err;}
+	});
+
+	// .project({ token: 0, fullName : 0, gender : 0, age: 0, fitbitId: 0, refreshToken : 0, _id : 0 });
+
+
+	// res.json(sleepDate); 
+	// res.sendStatus(200);
+
+
+});
 
 
 //Example GET and POST:
 
-/* GET comments from database */
-router.get('/comment', function(req, res, next) {
-	console.log("In the GET route?");
+// /* GET comments from database */
+// router.get('/comment', function(req, res, next) {
+// 	console.log("In the GET route?");
 
-	User.find({ fitbitId: userId}, function(err, user) {
-  		if (err) throw err;
-  		var i = 1;
-  		console.log("User's sleep data: ")
-  		console.log(user.age);
-	});
+// 	User.find({ fitbitId: userId}, function(err, user) {
+//   		if (err) throw err;
+//   		var i = 1;
+//   		console.log("User's sleep data: ")
+//   		console.log(user.age);
+// 	});
 
-});
+// });
 
-/* POST comments to database */
-router.post('/comment', function(req, res, next) {
-	console.log("POST comment route"); //[1]
-	console.log(req.body); //[2]
-	// res.sendStatus(200);
-	var newcomment = new Comment(req.body); //[3]
-	console.log(newcomment); //[3]
-	newcomment.save(function(err, post) { //[4]
-	  if (err) return console.error(err);
-	  console.log(post);
-	  res.sendStatus(200);
-	});
-});
+// /* POST comments to database */
+// router.post('/comment', function(req, res, next) {
+// 	console.log("POST comment route"); //[1]
+// 	console.log(req.body); //[2]
+// 	// res.sendStatus(200);
+// 	var newcomment = new Comment(req.body); //[3]
+// 	console.log(newcomment); //[3]
+// 	newcomment.save(function(err, post) { //[4]
+// 	  if (err) return console.error(err);
+// 	  console.log(post);
+// 	  res.sendStatus(200);
+// 	});
+// });
 
 module.exports = router;

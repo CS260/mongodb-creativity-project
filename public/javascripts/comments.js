@@ -1,15 +1,7 @@
-$(document).ready(function(){
-
-
-
-});
-
-
-
-
 var fitbitAccessToken;
 var sleepDate;
 
+var returnedSleepData;
 
 $(document).ready(function(){
 
@@ -19,9 +11,31 @@ $(document).ready(function(){
     $("#sleepData-section").hide();
 
 
+    // $("#submit-sleep").click(function(){
+    //     var myobj = {date:$("#input-sleep-date").val()};
+    //     jobj = JSON.stringify(myobj);
+    //     // $("#json").text(jobj);
+
+    //     var url = "/getFitbitSleep";
+    //     $.ajax({
+    //         url:url,
+    //         type: "POST",
+    //         data: jobj,
+    //         contentType: "application/json; charset=utf-8",
+    //         success: function(data,textStatus) {
+    //             console.log(data);
+    //             console.log(textStatus);
+    //         }
+    //      })
+    // });
+
+
+
+
+
     $("#apiCall").click(function(){
 
-        window.location.replace("http://localhost:3000/auth/fitbit");
+        window.location.href="http://localhost:3000/auth/fitbit";
  
         var url = "/fitbitUser";
         $.ajax({
@@ -39,7 +53,7 @@ $(document).ready(function(){
 
 
     //Not working to hide authorize-section 
-    $("authorize-button").click(function(){
+    $("#authorize-button").click(function(){
         $("#authorize-section").hide();
         $("#sleepData-section").show();
 
@@ -71,30 +85,63 @@ $(document).ready(function(){
     
 
     $("#submit-sleep").click(function(){
-        sleepDate = $("#input-sleep-date").val(); 
-        console.log("submit-sleep works");
-        console.log(sleepDate);
+        
+            var totalMinutesSleep;
+            var totalDeepSleep;
+            var totalLightSleep;
+            var totalRemSleep;
+            var totalWakeSleep;
 
-        fetch(
-        'https://api.fitbit.com/1.2/user/-/sleep/date/'+sleepDate+'.json',
-        {
-                headers: new Headers({
-                    'Authorization': 'Bearer ' + fitbitAccessToken
-                }),
-                mode: 'cors',
-                method: 'GET'
-        }).then(function(response){
-            return response.json();
 
-        }).then(function(j){
+        var myobj = {date:$("#input-sleep-date").val()};
+        jobj = JSON.stringify(myobj);
 
+        var url = "/getFitbitSleep";
+        $.ajax({
+            url:url,
+            type: "POST",
+            data: jobj,
+            contentType: "application/json; charset=utf-8",
+            success: function(data,textStatus) {
+                console.log(data);
+                returnedSleepData = data;
+
+                var i = 0;
+             console.log(data[0].sleepData[0].duration);
+            console.log(data[0].sleepData[0].totalDeepSleep);
+            console.log(data[0].sleepData[0].totalLightSleep);
+            console.log(data[0].sleepData[0].totalRemSleep);
+            console.log(data[0].sleepData[0].totalWakeSleep);
+
+
+            totalMinutesSleep = data[0].sleepData[0].duration;
+            totalDeepSleep = data[0].sleepData[0].totalDeepSleep;
+            totalLightSleep = data[0].sleepData[0].totalLightSleep;
+            totalRemSleep = data[0].sleepData[0].totalRemSleep;
+            totalWakeSleep = data[0].sleepData[0].totalWakeSleep;
+                console.log(returnedSleepData);
+                console.log(textStatus);
+            }
+         }).then(function(){
+
+        // sleepDate = $("#input-sleep-date").val(); 
+        // console.log("submit-sleep works");
+        // console.log(sleepDate);
+
+        // fetch(
+        // 'https://api.fitbit.com/1.2/user/-/sleep/date/'+sleepDate+'.json',
+        // {
+        //         headers: new Headers({
+        //             'Authorization': 'Bearer ' + fitbitAccessToken
+        //         }),
+        //         mode: 'cors',
+        //         method: 'GET'
+        // }).then(function(response){
+        //     return response.json();
+
+        // }).then(function(j){
 
             
-            var totalMinutesSleep = j['summary']['totalMinutesAsleep'];
-            var totalDeepSleep = j['summary']['stages']['deep'];
-            var totalLightSleep = j['summary']['stages']['light'];
-            var totalRemSleep = j['summary']['stages']['rem'];
-            var totalWakeSleep = j['summary']['stages']['wake'];
 
             var totalSleepWake = totalDeepSleep + totalLightSleep + totalRemSleep + totalWakeSleep;
 
@@ -109,7 +156,7 @@ $(document).ready(function(){
             var graphRemSleep = graphPercentage(totalRemSleep);
             var graphWakeSleep = graphPercentage(totalWakeSleep);
 
-            console.log(j);
+            // console.log(j);
 
             $(".graph-cont").show();
             $("#sleep-graph-title").show();
