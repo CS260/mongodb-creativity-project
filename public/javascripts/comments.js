@@ -150,10 +150,10 @@ $(document).ready(function(){
                 $(".graph-cont").append(everything);
                 
                 everything = "<div class='day-graph'>";
-                everything += "<div class='bar bar1' style='max-width: "+graphWakeSleep+"%; background: #f43c6e;'>Awake: "+graphWakeSleep+"%</div>";
-                everything += "<div class='bar bar2' style='max-width: "+graphRemSleep+"%; background: #7ec4ff;'>REM: "+graphRemSleep+"%</div>";
-                everything += "<div class='bar bar3' style='max-width: "+graphLightSleep+"%; background: #408dff;'>Light: "+graphLightSleep+"%</div>";
-                everything += "<div class='bar bar4' style='max-width: "+graphDeepSleep+"%; background: #154aa6;'>Deep: "+graphDeepSleep+"%</div>"
+                everything += "<div class='bar bar1' style='width: "+graphWakeSleep+"%; background: #f43c6e;'>Awake: "+graphWakeSleep+"%</div>";
+                everything += "<div class='bar bar2' style='width: "+graphRemSleep+"%; background: #7ec4ff;'>REM: "+graphRemSleep+"%</div>";
+                everything += "<div class='bar bar3' style='width: "+graphLightSleep+"%; background: #408dff;'>Light: "+graphLightSleep+"%</div>";
+                everything += "<div class='bar bar4' style='width: "+graphDeepSleep+"%; background: #154aa6;'>Deep: "+graphDeepSleep+"%</div>"
                 everything += "</div>";
                 $(".graph-cont").append(everything);
 
