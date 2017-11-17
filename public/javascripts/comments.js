@@ -148,7 +148,7 @@ $(document).ready(function(){
                 var minutesHoursWake = hoursMinutes(totalWakeSleep);
 
                 var everything;
-                everything = "<div class='sleepDateDuration'>"+d.toDateString()+" | "+minutesHoursTotal+ "  </div>";
+                everything = "<div class='sleepDateDuration'>"+d.toDateString()+" &nbsp | &nbsp &nbsp "+minutesHoursTotal+ "  </div>";
                 // everything += "<div class='sleepDateDuration'>Total Time Asleep: "+minutesHoursTotal+" </div>"; 
                 $(".graph-cont").append(everything);
                 
