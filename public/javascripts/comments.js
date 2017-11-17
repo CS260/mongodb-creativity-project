@@ -92,6 +92,8 @@ $(document).ready(function(){
                 console.log(data);
                 returnedSleepData = data;
                 $(".graph-cont").empty();
+
+
             for(var i = 0; i < data[0].sleepData.length; i++)
             {
                 totalMinutesSleep = data[0].sleepData[i].duration;
@@ -136,7 +138,6 @@ $(document).ready(function(){
 
                 sleepDate = sleepDate.split('T')[0];
                 var cleanedSleepDate = sleepDate.split('-');
-                console.log(cleanedSleepDate);
 
                 var d = new Date(cleanedSleepDate[0]+'/'+cleanedSleepDate[1]+'/'+cleanedSleepDate[2]);
                 // console.log(d.toDateString());
