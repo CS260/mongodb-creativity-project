@@ -77,7 +77,7 @@ body{
 
 #authorize-button {
 	font-family: 'Roboto', sans-serif;
-    text-align: center;	
+    text-align: center;
 	letter-spacing:1px;
 	cursor: pointer;
 	margin-left: 10px;
@@ -100,28 +100,28 @@ body{
 
 #apiCall {
 	font-family: 'Roboto', sans-serif;
-    text-align: center;	
+    text-align: center;
 	letter-spacing:1px;
 	cursor: pointer;
 	margin-left: 10px;
 	height: 65px;
 
-	color:#4cc2c4;
+	color:#f54785;
 	background: transparent;
 	width: 150px;
-	border: 2px solid #4cc2c4;
+	border: 2px solid #f54785;
 	border-radius:40px;
 	font-size: 16px;
 }
 
 #apiCall:hover{
     color: white;
-    background: #4cc2c4;
+    background: #f54785;
 }
 
 #submit-sleep{
 	font-family: 'Roboto', sans-serif;
-    text-align: center;	
+    text-align: center;
 	letter-spacing:1px;
 	cursor: pointer;
 	margin-left: 10px;
@@ -153,6 +153,7 @@ body{
     display: inline-block;
     width: 200px;
     text-align: center;
+		border-radius: 10px;
 
     font-family: 'Roboto', sans-serif;
 	font-style: normal;
@@ -287,7 +288,7 @@ body{
 }
 
 .bar{
-	
+
 	display: flex;
 	justify-content: flex-start;
 	height: 30px;
@@ -297,7 +298,7 @@ body{
 	font-size: 16px;
 	color: white;
 	padding: 0 0 0 10px;
-	
+
 	font-family: "futura-pt-bold", sans-serif;
 	font-style: normal;
 	font-weight: 400;
