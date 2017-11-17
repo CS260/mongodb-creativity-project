@@ -7,8 +7,8 @@ var async = require("async");
 var User = require('../models/users');	//Schema for MongoDB saltbox
 
 var fitbitAuth = new ClientOAuth2({
-  clientId: '22CKJP',
-  clientSecret: 'fe2699041edf37293117a98d25d5cf0a',
+  clientId: '22CL4K',
+  clientSecret: '2bb7d36929925facbb7d30ae0161f1e0',
   accessTokenUri: 'https://api.fitbit.com/oauth2/token',
   authorizationUri: 'https://www.fitbit.com/oauth2/authorize',
   redirectUri: 'http://ec2-18-221-58-194.us-east-2.compute.amazonaws.com:3000/auth/fitbit/callback',
