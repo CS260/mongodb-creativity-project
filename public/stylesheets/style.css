@@ -18,7 +18,6 @@ body{
 
 #top-header {
 	margin-bottom: 100px;
-
 }
 
 #top-nav ul{
@@ -50,6 +49,13 @@ body{
     float: left;
     padding-left: 10px;
     color: white;
+
+}
+
+a{
+
+	    text-decoration: none;
+	    color: white;
 }
 
 #top-nav {
