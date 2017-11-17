@@ -205,6 +205,28 @@ router.post('/getFitbitSleep', function(req, res, next) {
 });
 
 
+router.get('/getUserNames', function(req, res, next) {
+	console.log("In the GET names route");
+	
+	User.find({}, '-_id -fullName -sleepData -gender -age -fitbitId -token -refreshToken -__v', function(err, docs) {
+	    if (!err){ 
+	        // console.log('%j', docs);
+	        console.log("Return names: "+docs);
+	        res.json(docs); 
+
+	    } else {throw err;}
+	});
+
+	// .project({ token: 0, fullName : 0, gender : 0, age: 0, fitbitId: 0, refreshToken : 0, _id : 0 });
+
+
+	// res.json(sleepDate); 
+	// res.sendStatus(200);
+
+
+});
+
+
 //Example GET and POST:
 
 // /* GET comments from database */
