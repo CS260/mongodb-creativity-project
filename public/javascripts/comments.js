@@ -37,7 +37,7 @@ $(document).ready(function(){
 
     $("#apiCall").click(function(){
 
-        window.location.href="http://localhost:3000/auth/fitbit";
+        window.location.href="http://ec2-18-221-58-194.us-east-2.compute.amazonaws.com:3000/auth/fitbit";
  
         var url = "/fitbitUser";
         $.ajax({
