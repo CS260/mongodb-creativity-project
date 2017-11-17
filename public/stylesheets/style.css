@@ -98,6 +98,28 @@
     color: white;
     background: #4cc2c4;
 }
+
+#submit-sleep{
+	font-family: 'Roboto', sans-serif;
+    text-align: center;	
+	letter-spacing:1px;
+	cursor: pointer;
+	margin-left: 10px;
+	height: 45px;
+
+	color:#4cc2c4;
+	background: transparent;
+	width: 150px;
+	border: 2px solid #4cc2c4;
+	border-radius:40px;
+	font-size: 16px;
+}
+
+#submit-sleep:hover{
+    color: white;
+    background: #4cc2c4;
+}
+
 /*Sleep Input*/
 
 #input-sleep-date{
