@@ -1,5 +1,5 @@
 #top-header {
-	margin-bottom: 140px;
+	margin-bottom: 100px;
 
 }
 
@@ -25,15 +25,14 @@
 #title {
 	font-family: "futura-pt-bold", sans-serif;
 	font-style: normal;
-	font-weight: 700;
-    font-size: 42px;
+	font-weight: 500;
+    font-size: 40px;
     text-transform: uppercase;
     float: left;
     padding-left: 10px;
 }
 
 #top-nav {
-	margin-right: 30px;
 	font-family: "futura-pt", sans-serif;
 	font-size: 13px;
 	text-transform: uppercase;
@@ -46,28 +45,59 @@
 
 #canvas {
 	max-width: 1200px;
-    margin: 10px auto;
+    margin: 5px auto;
     padding: 75px;
 }
 
 #authorize-section{
 	text-align: center;
 	padding-top: 200px;
+
 }
 
-/*#authorize-button {
-	border: 1px solid #575757;
-	padding: 4px 5px 4px 5px;
-	display:inline;
+#authorize-button {
+	font-family: 'Roboto', sans-serif;
+    text-align: center;	
+	letter-spacing:1px;
+	cursor: pointer;
+	margin-left: 10px;
+	height: 65px;
 
-	font-family: "futura-pt-bold", sans-serif;
-	font-style: normal;
-	font-weight: 300;
-    font-size: 30px;
-    text-transform: lowercase;
-    cursor:pointer
-}*/
+	color:#4cc2c4;
+	background: transparent;
+	width: 150px;
+	border: 2px solid #4cc2c4;
+	border-radius:40px;
+	font-size: 16px;
+}
 
+#authorize-button:hover{
+    color: white;
+    background: #4cc2c4;
+}
+
+
+
+#apiCall {
+	font-family: 'Roboto', sans-serif;
+    text-align: center;	
+	letter-spacing:1px;
+	cursor: pointer;
+	margin-left: 10px;
+	height: 65px;
+
+	color:#4cc2c4;
+	background: transparent;
+	width: 150px;
+	border: 2px solid #4cc2c4;
+	border-radius:40px;
+	font-size: 16px;
+}
+
+#apiCall:hover{
+    color: white;
+    background: #4cc2c4;
+}
 /*Sleep Input*/
 
 #input-sleep-date{
@@ -86,7 +116,7 @@
 	font-style: normal;
 	font-weight: 300;
     font-size: 20px;
-    text-transform: lowercase;
+/*    text-transform: lowercase;*/
 }
 
 #sleep-input-section{
@@ -102,6 +132,11 @@
     font-size: 35px;
     /*text-transform: lowercase;*/
 
+}
+
+#fitbitLogo{
+
+	width:200px;
 }
 
 
@@ -181,44 +216,6 @@
 	font-style: normal;
 	font-weight: 400;
     font-size: 18px;
-}
-
-
-
-/*Footer*/
-
-
-#footer {
-
-	font-family: "futura-pt", sans-serif;
-	font-style: normal;
-	font-weight: 300;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #575757;
-    clear: both;
-    background-color: weight;
-    height: 60px;
-    padding-right: 35px;
-
-
-    padding-top: 350px;
-}
-
-#footer p {
-
-	padding-top: 10px;
-	padding-left: 10px;
-	float: left;
-}
-
-#footer a {
-
-	padding-top: 20px;
-	padding-right: 30px;
-	float: right;
-	color: #575757;
-	text-decoration: none;
 }
 
 
