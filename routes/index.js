@@ -11,7 +11,7 @@ var fitbitAuth = new ClientOAuth2({
   clientSecret: 'fe2699041edf37293117a98d25d5cf0a',
   accessTokenUri: 'https://api.fitbit.com/oauth2/token',
   authorizationUri: 'https://www.fitbit.com/oauth2/authorize',
-  redirectUri: 'http://localhost:3000/auth/fitbit/callback',
+  redirectUri: 'http://ec2-18-221-58-194.us-east-2.compute.amazonaws.com:3000/auth/fitbit/callback',
   scopes: ['sleep', 'profile','heartrate']
 })
 
