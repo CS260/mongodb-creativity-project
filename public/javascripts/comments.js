@@ -134,6 +134,13 @@ $(document).ready(function(){
 
                 console.log("hours fixed");
 
+                sleepDate = sleepDate.split('T')[0];
+                var cleanedSleepDate = sleepDate.split('-');
+                console.log(cleanedSleepDate);
+
+                var d = new Date(cleanedSleepDate[0]+'/'+cleanedSleepDate[1]+'/'+cleanedSleepDate[2]);
+                // console.log(d.toDateString());
+
                 var minutesHoursTotal = hoursMinutes(totalMinutesSleep);
                 var minutesHoursDeep = hoursMinutes(totalDeepSleep); 
                 var minutesHoursLight = hoursMinutes(totalLightSleep);
@@ -141,8 +148,8 @@ $(document).ready(function(){
                 var minutesHoursWake = hoursMinutes(totalWakeSleep);
 
                 var everything;
-                everything = "<div class='sleepDateDuration'>Date:"+sleepDate+"  </div>";
-                everything += "<div class='sleepDateDuration'>Total Time Asleep: "+minutesHoursTotal+" </div>"; 
+                everything = "<div class='sleepDateDuration'>"+d.toDateString()+" | "+minutesHoursTotal+ "  </div>";
+                // everything += "<div class='sleepDateDuration'>Total Time Asleep: "+minutesHoursTotal+" </div>"; 
                 $(".graph-cont").append(everything);
                 
                 everything = "<div class='day-graph'>";
