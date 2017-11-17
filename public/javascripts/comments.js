@@ -149,7 +149,7 @@ $(document).ready(function(){
                 everything += "<div>Total Awake Time: "+totalWakeSleep+" </div>";
                 $(".graph-cont").append(everything);
                 
-                everything = "<div>";
+                everything = "<div class='day-graph'>";
                 everything += "<div class='bar bar1' style='max-width: "+graphWakeSleep+"%; background: #f43c6e;'>Awake: "+graphWakeSleep+"%</div>";
                 everything += "<div class='bar bar2' style='max-width: "+graphRemSleep+"%; background: #7ec4ff;'>REM: "+graphRemSleep+"%</div>";
                 everything += "<div class='bar bar3' style='max-width: "+graphLightSleep+"%; background: #408dff;'>Light: "+graphLightSleep+"%</div>";
